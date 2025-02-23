@@ -208,15 +208,11 @@ h4{
   display: flex;
   gap: 2rem;
   overflow-x: auto;  /* Automatically show scrollbar if needed */
-  align-items: center;
-  justify-content: flex-start;  /* Align items at the start */
+ 
+ /* Align items at the start */
   min-width: max-content;  /* Force the container to expand to fit its children */
 }
-.transaction-info span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 
 
 /* Optional: Ensure children have a minimum width */
