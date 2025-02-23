@@ -369,10 +369,14 @@ li .nameoftransaction{
   /* Ensures it stays inline */
 }
 .transaction-list-container {
-  height: 400px;
-  overflow-y: scroll;
+  width: 100%;
+  max-height: 400px;      /* or height: 400px */
+  overflow-y: auto;       /* vertical scroll if the list is long */
+  overflow-x: hidden;     /* no horizontal scroll here */
+  scroll-behavior: smooth;
   padding-left: 20px;
 }
+
 .transaction-list-container::-webkit-scrollbar {
   display: none;
 }
@@ -435,13 +439,13 @@ li .nameoftransaction{
     margin: 0;
     font-size: 1.5rem;
   }
-  .transaction-info{
-    padding: 0;
-    overflow-x: scroll;
-    min-width: max-content;
-    
-
+  .transaction-info {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;        /* horizontal scrolling here */
+    min-width: max-content;  /* allows content to exceed container width */
   }
+  
   .t1amount{
    font-size: 1rem;
   }
