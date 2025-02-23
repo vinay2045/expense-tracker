@@ -209,8 +209,7 @@ h4{
   gap: 2rem;
   overflow-x: auto;  /* Automatically show scrollbar if needed */
  
- /* Align items at the start */
-  min-width: max-content;  /* Force the container to expand to fit its children */
+/* Force the container to expand to fit its children */
 }
 
 
