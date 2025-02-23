@@ -116,6 +116,7 @@ input:focus{
   gap: 2rem;
 }
 .b1{
+  overflow-x: hidden;
   font-family:jetbrains mono;
   align-items: center;
   justify-content: center;
@@ -203,20 +204,20 @@ h4{
  font-weight: 200;
   gap: 2rem;
 }
-.transaction-info{
-  scroll-behavior: smooth;
-  
-  width: 100%;
-
-  gap: 2rem;
+.transaction-info {
   display: flex;
-
-
-
-  overflow-x:scroll ;
+  gap: 2rem;
+  overflow-x: auto;  /* Automatically show scrollbar if needed */
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;  /* Align items at the start */
+  min-width: max-content;  /* Force the container to expand to fit its children */
 }
+
+/* Optional: Ensure children have a minimum width */
+.transaction-info > * {
+  min-width: 150px;  /* Adjust this value based on your design */
+}
+
 .t1amount{
   font-family:jetbrains mono;
   font-size: 1.3rem;

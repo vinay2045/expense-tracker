@@ -170,37 +170,6 @@ function removeTransaction(id) {
 function updateLocalStorage() {
   localStorage.setItem('transactions', JSON.stringify(transactions));
 }
-// Register Draggable plugin
-gsap.registerPlugin(Draggable);
-
-// Select your container
-const container = document.querySelector('.transaction-list-container');
-
-// Create a Draggable that controls the container's scrollLeft
-Draggable.create(container, {
-  type: 'scrollLeft',    // We want horizontal scrolling
-  inertia: true,         // Adds a “throw” + deceleration
-  edgeResistance: 0.5,   // Adjust for how “bouncy” edges are (0=very loose, 1=no bounce)
-  // You can also use onDrag, onThrowComplete, etc. if you need callbacks
-});
-// Register Draggable plugin if not already done
-gsap.registerPlugin(Draggable);
-
-// Select your vertical container
-const verticalContainer = document.querySelector('.transaction-list-container');
-
-// Create a Draggable instance that controls the container's scrollTop for vertical scrolling
-Draggable.create(verticalContainer, {
-  type: 'scrollTop',         // Vertical scroll control
-  inertia: {
-    minDuration: 0.1,        // Minimum throw duration
-    maxDuration: 1.5,        // Maximum throw duration
-    resistance: 50           // Lower resistance => faster, longer throws
-  },
-  edgeResistance: 0.1,       // Lower value for a bouncy, elastic feel at the edges
-  bounds: verticalContainer, // Limits scrolling within the container
-});
-
 
 
 // // Function to update the bar chart based on the selected time period
