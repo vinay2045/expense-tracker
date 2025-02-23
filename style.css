@@ -437,6 +437,8 @@ li .nameoftransaction{
   }
   .transaction-info{
     padding: 0;
+    overflow-x: scroll;
+    min-width: max-content;
     
 
   }
