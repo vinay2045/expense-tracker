@@ -435,9 +435,9 @@ li .nameoftransaction{
     font-size: 1.5rem;
   }
   .transaction-info{
-    padding: 0;
+
     min-width: max-content;
-    overflow-x: auto;
+   
     
 
   }
