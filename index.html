@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Draggable.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    
+
+    
+  </style>
+</head>
+<body>
+  <h2>Expense Tracker</h2>
+  <div class="b1">
+    <h4 class="balance">| Balance |<span><i id="logo"        class='bx bxs-invader'></i></span></h4>
+    <div class="block1">
+      <h1 id="balance">| ₹0.00 |</h1>
+    </div>
+   </div>
+  <div class="container">
+   
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money-plus">+₹0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money-minus">-₹0.00</p>
+      </div>
+    </div>
+    <div class="block2">
+      <h3>History</h3>
+     
+      <i class="fa-solid fa-trash" id="clear-all-transactions"></i>
+      
+    </div>
+    <div class="transaction-list-container">
+      <ul id="list" class="list">
+        <!-- Transactions will be added here -->
+      </ul>
+    </div>
+    <div class="chart-container" style="display: none;">
+      <canvas id="transactionChart"></canvas>
+    </div>
+    <form id="form">
+      <div class="form-control">
+        <label class="transactionname" for="text">Text</label>
+        <input type="text" id="text" placeholder="Enter text..." />
+      </div>
+      <div class="form-control">
+        <label for="income">Income</label>
+        <input type="number" id="income" placeholder="Enter amount..." />
+      </div>
+      <div class="form-control">
+        <label for="expense">Expense</label>
+        <input type="number" id="expense" placeholder="Enter amount..." />
+      </div>
+      <button class="btn">Add transaction</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
