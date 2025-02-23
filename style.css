@@ -434,14 +434,15 @@ li .nameoftransaction{
     margin: 0;
     font-size: 1.5rem;
   }
-  .transaction-info{
-    overflow-x: auto;
-
+  .transaction-info {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;     /* Horizontal scroll only here */
     min-width: max-content;
-   
-    
-
+    align-items: center;
+    /* Remove justify-content if you want content to naturally flow left to right */
   }
+  
   .t1amount{
    font-size: 1rem;
   }
