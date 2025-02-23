@@ -397,7 +397,7 @@ li .nameoftransaction{
     
     margin: 0;  
     padding: 2rem;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
   h1{
     padding: 2rem;
@@ -435,6 +435,7 @@ li .nameoftransaction{
     font-size: 1.5rem;
   }
   .transaction-info{
+    overflow-x: auto;
 
     min-width: max-content;
    
