@@ -210,7 +210,7 @@ h4{
   overflow-x: auto;  /* Automatically show scrollbar if needed */
  
  /* Align items at the start */
-  min-width: max-content;  /* Force the container to expand to fit its children */
+  /* Force the container to expand to fit its children */
 }
 
 
@@ -369,14 +369,10 @@ li .nameoftransaction{
   /* Ensures it stays inline */
 }
 .transaction-list-container {
-  width: 100%;
-  max-height: 400px;      /* or height: 400px */
-  overflow-y: auto;       /* vertical scroll if the list is long */
-  overflow-x: hidden;     /* no horizontal scroll here */
-  scroll-behavior: smooth;
+  height: 400px;
+  overflow-y: scroll;
   padding-left: 20px;
 }
-
 .transaction-list-container::-webkit-scrollbar {
   display: none;
 }
@@ -402,7 +398,7 @@ li .nameoftransaction{
     
     margin: 0;  
     padding: 2rem;
-    
+    overflow-y: scroll;
   }
   h1{
     padding: 2rem;
@@ -439,13 +435,13 @@ li .nameoftransaction{
     margin: 0;
     font-size: 1.5rem;
   }
-  .transaction-info {
-    display: flex;
-    gap: 2rem;
-    overflow-x: auto;        /* horizontal scrolling here */
-    min-width: max-content;  /* allows content to exceed container width */
+  .transaction-info{
+    padding: 0;
+    overflow-x: scroll;
+   
+    
+
   }
-  
   .t1amount{
    font-size: 1rem;
   }
