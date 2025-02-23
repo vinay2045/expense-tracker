@@ -409,11 +409,11 @@ li .nameoftransaction{
     margin: 0;
     font-size: 1rem;
     overflow-x: scroll;
+    flex-wrap:wrap;
   
   }
-  .b1::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari */
-  }
+  
+
   h2{ 
     padding-top: 2rem;
    
@@ -461,6 +461,10 @@ li .nameoftransaction{
 
   label{
     font-size: 1.3rem;
+  }
+  .inc-exp-container{
+    flex-wrap: wrap;
+    gap: 1rem;
   }
  
   h4 .balance{
