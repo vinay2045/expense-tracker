@@ -116,7 +116,7 @@ input:focus{
   gap: 2rem;
 }
 .b1{
-  overflow-x: hidden;
+
   font-family:jetbrains mono;
   align-items: center;
   justify-content: center;
@@ -408,8 +408,12 @@ li .nameoftransaction{
     padding: .8rem;
     margin: 0;
     font-size: 1rem;
-  }
+    overflow-x: scroll;
   
+  }
+  .b1::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari */
+  }
   h2{ 
     padding-top: 2rem;
    
@@ -438,6 +442,9 @@ li .nameoftransaction{
   .transaction-info{
     padding: 0;
     overflow-x: scroll;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
    
     
 
@@ -446,7 +453,7 @@ li .nameoftransaction{
    font-size: 1rem;
   }
   .t1name{
-   font-size: 1.1rem;
+   font-size: 1rem;
   }
   .t1time{
    font-size: 1rem;
