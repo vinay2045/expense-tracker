@@ -214,9 +214,7 @@ h4{
 }
 
 /* Optional: Ensure children have a minimum width */
-.transaction-info > * {
-  min-width: 150px;  /* Adjust this value based on your design */
-}
+
 
 .t1amount{
   font-family:jetbrains mono;
