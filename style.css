@@ -209,7 +209,8 @@ h4{
   gap: 2rem;
   overflow-x: auto;  /* Automatically show scrollbar if needed */
  
-/* Force the container to expand to fit its children */
+ /* Align items at the start */
+  min-width: max-content;  /* Force the container to expand to fit its children */
 }
 
 
@@ -397,7 +398,7 @@ li .nameoftransaction{
     
     margin: 0;  
     padding: 2rem;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
   }
   h1{
     padding: 2rem;
@@ -434,15 +435,11 @@ li .nameoftransaction{
     margin: 0;
     font-size: 1.5rem;
   }
-  .transaction-info {
-    display: flex;
-    gap: 2rem;
-    overflow-x: auto;     /* Horizontal scroll only here */
-    min-width: max-content;
-    align-items: center;
-    /* Remove justify-content if you want content to naturally flow left to right */
+  .transaction-info{
+    padding: 0;
+    
+
   }
-  
   .t1amount{
    font-size: 1rem;
   }
@@ -576,4 +573,4 @@ li .nameoftransaction{
     opacity: 1;
   }
 } 
-*/
+*/ 
