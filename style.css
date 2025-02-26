@@ -206,7 +206,11 @@ h4{
 }
 .transaction-info {
   display: flex;
+  width: 100%;
   gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+
   overflow-x: auto;  /* Automatically show scrollbar if needed */
  
  /* Align items at the start */
@@ -275,6 +279,7 @@ input[type="number"] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+  width: 100%;
 }
 
 .list li.plus {
@@ -370,6 +375,7 @@ li .nameoftransaction{
 }
 .transaction-list-container {
   height: 400px;
+  width: 100%;
   overflow-y: scroll;
   padding-left: 20px;
 }
@@ -378,6 +384,7 @@ li .nameoftransaction{
 }
 .transaction-list-container ul {
   padding-right: 20px;
+  width: 100%;
 }
 .transaction-list-container li {
   position: relative;
